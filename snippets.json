@@ -1,0 +1,582 @@
+{
+  "entitygroup": {
+    "prefix": "EntityGroup",
+    "body": "EntityGroup[$1]$0",
+    "description": "Get the given indexed entity in the logic_script"
+  },
+  "__KeyValueFromInt": {
+    "prefix": "__KeyValueFromInt",
+    "body": "__KeyValueFromInt(${1:key}, ${2:value})$0"
+  },
+  "__KeyValueFromFloat": {
+    "prefix": "__KeyValueFromFloat",
+    "body": "__KeyValueFromFloat(${1:key}, ${2:value})$0"
+  },
+  "__KeyValueFromString": {
+    "prefix": "__KeyValueFromString",
+    "body": "__KeyValueFromString(${1:key}, ${2:value})$0"
+  },
+  "__KeyValueFromVector": {
+    "prefix": "__KeyValueFromVector",
+    "body": "__KeyValueFromVector(${1:key}, ${2:value})$0"
+  },
+  "Destroy": {
+    "prefix": "Destroy()",
+    "body": "Destroy()",
+    "description": "Destroy an entity"
+  },
+  "EyePosition": {
+    "prefix": "EyePosition()",
+    "body": "EyePosition()",
+    "description": "Get position vector of the eye position"
+  },
+  "FirstMoveChild": {
+    "prefix": "FirstMoveChild",
+    "body": "FirstMoveChild()",
+    "description": "method"
+  },
+  "GetAngles": {
+    "prefix": "GetAngles()",
+    "body": "GetAngles()",
+    "description": "Get the entity pitch, yaw, roll as a Vector object"
+  },
+  "GetAngularVelocity": {
+    "prefix": "GetAngularVelocity()",
+    "body": "GetAngularVelocity()",
+    "description": "Get the local angular velocity - returns a Vector of pitch, yaw, roll"
+  },
+  "GetBoundingMaxs": {
+    "prefix": "GetBoundingMaxs()",
+    "body": "GetBoundingMaxs()",
+    "description": "Get a vector containing max bounds, centered on object"
+  },
+  "GetBoundingMins": {
+    "prefix": "GetBoundingMins()",
+    "body": "GetBoundingMins()",
+    "description": "Get a vector containing min bounds, centered on object"
+  },
+  "GetCenter": {
+    "prefix": "GetCenter()",
+    "body": "GetCenter()",
+    "description": "Get vector to center of object - local coords"
+  },
+  "GetClassname": {
+    "prefix": "GetClassname()",
+    "body": "GetClassname()",
+    "description": "Get entity classname."
+  },
+  "GetForwardVector": {
+    "prefix": "GetForwardVector()",
+    "body": "GetForwardVector()",
+    "description": "Get the forward vector of the entity."
+  },
+  "GetHealth": {
+    "prefix": "GetHealth()",
+    "body": "GetHealth()",
+    "description": "Returns the current health."
+  },
+  "GetLeftVector": {
+    "prefix": "GetLeftVector()",
+    "body": "GetLeftVector()",
+    "description": "Get the right vector of the entity."
+  },
+  "GetMaxHealth": {
+    "prefix": "GetMaxHealth()",
+    "body": "GetMaxHealth()",
+    "description": "Returns the maximum health."
+  },
+  "GetModelKeyValues": {
+    "prefix": "GetModelKeyValues()",
+    "body": "GetModelKeyValues()",
+    "description": "Returns the $keyvalues block of the entity's model as a #CScriptKeyValues object. Note that this is not the keyvalues of the entity itself."
+  },
+  "GetModelName": {
+    "prefix": "GetModelName()",
+    "body": "GetModelName()",
+    "description": "Returns the name of the model."
+  },
+  "GetMoveParent": {
+    "prefix": "GetMoveParent()",
+    "body": "GetMoveParent()",
+    "description": "If in hierarchy, retrieves the entity's parent."
+  },
+  "GetName": {
+    "prefix": "GetName()",
+    "body": "GetName()",
+    "description": "Returns the targetname of the entity."
+  },
+  "GetOrigin": {
+    "prefix": "GetOrigin()",
+    "body": "GetOrigin()",
+    "description": "Returns this entity's local origin."
+  },
+  "GetOwner": {
+    "prefix": "GetOwner()",
+    "body": "GetOwner()",
+    "description": "Gets this entity's owner."
+  },
+  "GetPreTemplateName": {
+    "prefix": "GetPreTemplateName()",
+    "body": "GetPreTemplateName()",
+    "description": "Get the entity name stripped of template unique decoration. This is the &048 suffix added by templates that do not preserve the entity name."
+  },
+  "GetRootMoveParent": {
+    "prefix": "GetRootMoveParent()",
+    "body": "GetRootMoveParent()",
+    "description": "If in hierarchy, walks up the hierarchy to find the root parent."
+  },
+  "GetScriptId": {
+    "prefix": "GetScriptId()",
+    "body": "GetScriptId()",
+    "description": "Returns the thinkfunction keyvalue of the entity."
+  },
+  "GetScriptScope": {
+    "prefix": "GetScriptScope()",
+    "body": "GetScriptScope()",
+    "description": "Retrieve the table storing the Entity Script data associated with this entity."
+  },
+  "GetSoundDuration": {
+    "prefix": "GetSoundDuration()",
+    "body": "GetSoundDuration(${1:soundname}, ${2:actormodel})$0",
+    "description": "Returns float duration of the sound."
+  },
+  "GetTeam": {
+    "prefix": "GetTeam()",
+    "body": "GetTeam()",
+    "description": "Get the team this entity is on."
+  },
+  "GetUpVector": {
+    "prefix": "GetUpVector()",
+    "body": "GetUpVector()",
+    "description": "Get the up vector of the entity."
+  },
+  "GetVelocity": {
+    "prefix": "GetVelocity()",
+    "body": "GetVelocity()",
+    "description": "Get the velocity of the entity."
+  },
+  "IsValid": {
+    "prefix": "IsValid()",
+    "body": "IsValid()",
+    "description": "Whether the handle belongs to a valid entity."
+  },
+  "NextMovePeer": {
+    "prefix": "NextMovePeer()",
+    "body": "NextMovePeer()",
+    "description": "Return the next entity in the same movement hierarchy."
+  },
+  "PrecacheModel": {
+    "prefix": "PrecacheModel()",
+    "body": "PrecacheModel(${1:modelname})$0",
+    "description": "Precache a model. Expensive."
+  },
+  "PrecacheSoundScript": {
+    "prefix": "PrecacheSoundScript()",
+    "body": "PrecacheSoundScript(${1:soundscript})$0",
+    "description": "Precache a sound for later playing. Expensive."
+  },
+  "SetAbsOrigin": {
+    "prefix": "SetAbsOrigin()",
+    "body": "SetAbsOrigin(${1:position})$0",
+    "description": "Set absolute origin."
+  },
+  "SetAngles": {
+    "prefix": "SetAngles()",
+    "body": "SetAngles(${1:pitch}, ${2:yaw}, ${3:raw})$0",
+    "description": "Set absolute origin."
+  },
+  "SetAngularVelocity": {
+    "prefix": "SetAngularVelocity()",
+    "body": "SetAngularVelocity(${1:pitch}, ${2:yaw}, ${3:raw})$0",
+    "description": "Set the local angular velocity - takes float pitch, yaw, roll velocities."
+  },
+  "SetForwardVector": {
+    "prefix": "SetForwardVector()",
+    "body": "SetForwardVector(${1:forwardvec})$0",
+    "description": "Set the orientation of the entity to have this forward vector."
+  },
+  "SetHealth": {
+    "prefix": "SetHealth()",
+    "body": "SetHealth(${1:health})$0",
+    "description": "Sets the current health."
+  },
+  "SetMaxHealth": {
+    "prefix": "SetMaxHealth()",
+    "body": "SetMaxHealth(${1:health})$0",
+    "description": "Sets the maximum health."
+  },
+  "SetModel": {
+    "prefix": "SetModel()",
+    "body": "SetModel(${1:modelname})$0",
+    "description": "Changes the model of the entity. Does not precache the model."
+  },
+  "SetOrigin": {
+    "prefix": "SetOrigin()",
+    "body": "SetOrigin(${1:position})$0",
+    "description": "Set local origin."
+  },
+  "SetOwner": {
+    "prefix": "SetOwner()",
+    "body": "SetOwner(${1:owner})$0",
+    "description": "Sets this entity's owner."
+  },
+  "SetSize": {
+    "prefix": "SetSize()",
+    "body": "SetSize(${1:mins}, ${2:maxs})$0",
+    "description": "Sets the bounding box size."
+  },
+  "SetTeam": {
+    "prefix": "SetTeam()",
+    "body": "SetTeam(${1:team})$0",
+    "description": "Set the team this entity is on."
+  },
+  "SetVelocity": {
+    "prefix": "SetVelocity()",
+    "body": "SetVelocity(${1:velocity})$0",
+    "description": "Set local velocity."
+  },
+  "StopSound": {
+    "prefix": "StopSound()",
+    "body": "StopSound(${1:soundname})$0",
+    "description": "Stops a sound on this entity."
+  },
+  "ValidateScriptScope": {
+    "prefix": "ValidateScriptScope()",
+    "body": "ValidateScriptScope()",
+    "description": "Ensure that an entity's script scope has been created."
+  },
+  "OnPostSpawn": {
+    "prefix": "OnPostSpawn()",
+    "body": "OnPostSpawn()",
+    "description": "This is called after the entity has spawned."
+  },
+  "Precache": {
+    "prefix": "Precache()",
+    "body": "Precache()",
+    "description": "This is called during entity spawning and after restore to allow scripts to precache any resources they need."
+  },
+  "GetAttachmentAngles": {
+    "prefix": "GetAttachmentAngles()",
+    "body": "GetAttachmentAngles(${1:id})$0",
+    "description": "Get the attachment ID's angles as a pitch, yaw, roll vector."
+  },
+  "GetAttachmentOrigin": {
+    "prefix": "GetAttachmentOrigin()",
+    "body": "GetAttachmentOrigin(${1:id})$0",
+    "description": "Get the attachment ID's origin vector."
+  },
+  "IsSequenceFinished": {
+    "prefix": "IsSequenceFinished()",
+    "body": "IsSequenceFinished()",
+    "description": "Ask whether the main sequence is done playing."
+  },
+  "LookupAttachment": {
+    "prefix": "LookupAttachment()",
+    "body": "LookupAttachment(${1:attachmentName})",
+    "description": "Get the named attachment ID."
+  },
+  "SetBodygroup": {
+    "prefix": "SetBodygroup()",
+    "body": "SetBodygroup(${1:groupIndex}, ${2:value})",
+    "description": "Sets the models bodygroup value by index."
+  },
+  "IsNoclipping": {
+    "prefix": "IsNoclipping()",
+    "body": "IsNoclipping()",
+    "description": "Returns true if the player is in noclip mode."
+  },
+  "SpawnEntity": {
+    "prefix": "SpawnEntity()",
+    "body": "SpawnEntity()",
+    "description": "Create an entity at the location of the maker."
+  },
+  "SpawnEntityAtEntityOrigin": {
+    "prefix": "SpawnEntityAtEntityOrigin()",
+    "body": "SpawnEntityAtEntityOrigin(${1:entity})$0",
+    "description": "Create an entity at the location of a specified entity instance."
+  },
+  "SpawnEntityAtLocation": {
+    "prefix": "SpawnEntityAtLocation()",
+    "body": "SpawnEntityAtLocation(${1:origin}, ${2:orientation})$0",
+    "description": "Create an entity at a specified location and orientation, orientation is Euler angle in degrees (pitch, yaw, roll)."
+  },
+  "SpawnEntityAtNamedEntityOrigin": {
+    "prefix": "SpawnEntityAtNamedEntityOrigin()",
+    "body": "SpawnEntityAtNamedEntityOrigin(${1:targetname})$0",
+    "description": "Create an entity at the location of a named entity."
+  },
+  "IsBeingCarried": {
+    "prefix": "IsBeingCarried()",
+    "body": "IsBeingCarried()",
+    "description": "Get whether the hostage is currently being carried or not."
+  },
+  "GetWaveNumber": {
+    "prefix": "GetWaveNumber()",
+    "body": "GetWaveNumber()",
+    "description": "Get the number of waves the players have completed."
+  },
+  "CreateByClassname": {
+    "prefix": "CreateByClassname()",
+    "body": "CreateByClassname(${1:classname})$0",
+    "description": "Creates an entity by class name."
+  },
+  "FindByClassname": {
+    "prefix": "FindByClassname()",
+    "body": "FindByClassname(${1:previous}, ${2:classname})$0",
+    "description": "Find entities by class name."
+  },
+  "FindByClassnameNearest": {
+    "prefix": "FindByClassnameNearest()",
+    "body": "FindByClassnameNearest(${1:class}, ${2:origin},  ${3:radius})$0",
+    "description": "Find the entity with the given class name nearest to the specified point."
+  },
+  "FindByClassnameWithin": {
+    "prefix": "FindByClassnameWithin()",
+    "body": "FindByClassnameWithin(${1:previous}, ${2:classname}, ${3:origin}, ${4:radius})$0",
+    "description": "Find entities by class name within a radius."
+  },
+  "FindByModel": {
+    "prefix": "FindByModel()",
+    "body": "FindByModel(${1:previous}, ${2:modelname})$0",
+    "description": "Find entities by model name."
+  },
+  "FindByName": {
+    "prefix": "FindByName()",
+    "body": "FindByName(${1:previous}, ${2:targetname})$0",
+    "description": "Find entities by model name."
+  },
+  "FindByNameNearest": {
+    "prefix": "FindByNameNearest()",
+    "body": "FindByNameNearest(${1:targetname}, ${2:origin}, ${3:radius})$0",
+    "description": "Find entities by name nearest to a point."
+  },
+  "FindByNameWithin": {
+    "prefix": "FindByNameWithin()",
+    "body": "FindByNameWithin(${1:previous}, ${2:targetname}, ${3:origin}, ${4:radius})$0",
+    "description": "Find entities by name within a radius."
+  },
+  "FindByTarget": {
+    "prefix": "FindByTarget()",
+    "body": "FindByTarget(${1:previous}, ${2:target})$0",
+    "description": "Find entities by target keyvalue."
+  },
+  "FindInSphere": {
+    "prefix": "FindInSphere()",
+    "body": "FindInSphere(${1:previous}, ${2:origin}, ${3:radius})$0",
+    "description": "Find entities by target keyvalue."
+  },
+  "First": {
+    "prefix": "First()",
+    "body": "First()",
+    "description": "Returns the first entity, typically worldspawn. Equivalent to Entities.Next(null)."
+  },
+  "Next": {
+    "prefix": "Next()",
+    "body": "Next(${1:previous})$0",
+    "description": "Providing reference to a previously found entity, returns the next one in the list."
+  },
+  "GetPlayerSpeechDuration": {
+    "prefix": "GetPlayerSpeechDuration()",
+    "body": "GetPlayerSpeechDuration(${1:playerIndex})$0",
+    "description": "Returns the number of seconds the player has been continuously speaking."
+  },
+  "IsPlayerSpeaking": {
+    "prefix": "IsPlayerSpeaking()",
+    "body": "IsPlayerSpeaking(${1:playerIndex})$0",
+    "description": "Returns whether the player specified is speaking."
+  },
+  "Vector": {
+    "prefix": "Vector()",
+    "body": "Vector(${1:x}, ${2:y}, ${3:z})$0",
+    "description": "Creates a new vector with the specified Cartesian coordiantes."
+  },
+  "Cross": {
+    "prefix": "Cross()",
+    "body": "Cross(${1:vector})$0",
+    "description": "The vector product of two vectors. Returns a vector orthogonal to the input vectors."
+  },
+  "Dot": {
+    "prefix": "Dot()",
+    "body": "Dot(${1:vector})$0",
+    "description": "The scalar product of two vectors."
+  },
+  "Length": {
+    "prefix": "Length()",
+    "body": "Length()",
+    "description": "Length of the vector."
+  },
+  "LengthSqr": {
+    "prefix": "LengthSqr()",
+    "body": "LengthSqr()",
+    "description": "Length of the vector squared. Cheaper than the above method."
+  },
+  "Length2D": {
+    "prefix": "Length2D()",
+    "body": "Length2D()",
+    "description": "Returns the length of the vector on the x-y plane."
+  },
+  "Length2DSqr": {
+    "prefix": "Length2DSqr()",
+    "body": "Length2DSqr()",
+    "description": "Returns the square of the length of the vector on the x-y plane. Cheaper than the above method."
+  },
+  "Norm": {
+    "prefix": "Norm()",
+    "body": "Norm()",
+    "description": "Normalises the vector, returns the vector length."
+  },
+  "ToKVString": {
+    "prefix": "ToKVString()",
+    "body": "ToKVString()",
+    "description": "Returns a string without separations commas."
+  },
+  "DebugDrawBox": {
+    "prefix": "DebugDrawBox()",
+    "body": "DebugDrawBox(${1:origin}, ${2:mins}, ${3:max}, ${4:r}, ${5:g}, ${6:b}, ${7:alpha}, ${8:duration})$0",
+    "description": "Draw a debug overlay box."
+  },
+  "DebugDrawLine": {
+    "prefix": "DebugDrawLine()",
+    "body": "DebugDrawLine(${1:start}, ${2:end}, ${3:r}, ${4:g}, ${5:b}, ${6:noDepthTest}, ${7:duration})$0",
+    "description": "Draw a debug line between two points."
+  },
+  "Msg": {
+    "prefix": "Msg()",
+    "body": "Msg(${1:message})$0",
+    "description": "Equivalent to print."
+  },
+  "print": {
+    "prefix": "print()",
+    "body": "print(${1:message})$0",
+    "description": "Prints the given message to the developer console."
+  },
+  "printl": {
+    "prefix": "printl()",
+    "body": "printl(${1:message})$0",
+    "description": "Prints the given message to the developer console with newline."
+  },
+  "ScriptPrintMessageCenterAll": {
+    "prefix": "ScriptPrintMessageCenterAll()",
+    "body": "ScriptPrintMessageCenterAll(${1:message})$0",
+    "description": "Prints an alert message in the center of the screen to all players."
+  },
+  "ScriptPrintMessageCenterAllWithParams": {
+    "prefix": "ScriptPrintMessageCenterAllWithParams()",
+    "body": "ScriptPrintMessageCenterAllWithParams(${1:message}, ${2:param1}, ${3:param2}, ${4:param4})$0",
+    "description": "Prints an alert message in the center print method to all players. Needs to pass token/message."
+  },
+  "ScriptPrintMessageCenterTeam": {
+    "prefix": "ScriptPrintMessageCenterTeam()",
+    "body": "ScriptPrintMessageCenterTeam(${1:team}, ${2:message})$0",
+    "description": "Prints an alert message in the center of the screen to the specified team."
+  },
+  "ScriptPrintMessageChatAll": {
+    "prefix": "ScriptPrintMessageChatAll()",
+    "body": "ScriptPrintMessageChatAll(${1:message})$0",
+    "description": "Prints a message in chat to all players."
+  },
+  "ScriptPrintMessageChatTeam": {
+    "prefix": "ScriptPrintMessageChatTeam()",
+    "body": "ScriptPrintMessageChatTeam(${1:team}, ${2:message})$0",
+    "description": "Prints a message in chat to all players."
+  },
+  "ShowMessage": {
+    "prefix": "ShowMessage()",
+    "body": "ShowMessage(${1:string})$0",
+    "description": "Print a hud message on all clients found in /scripts/titles.txt."
+  },
+  "CreateProp": {
+    "prefix": "CreateProp()",
+    "body": "CreateProp(${1:classname}, ${2:origin}, ${3:model}, ${4:animation})$0",
+    "description": "Create a prop with the specified class and model. Both prop_physics, prop_dynamic as well as some other entity classes with models work. Does not precache the model."
+  },
+  "IncludeScript": {
+    "prefix": "IncludeScript()",
+    "body": "IncludeScript(${1:filename})$0",
+    "description": "Execute a script file in the scope of scope, this by default."
+  },
+  "EntFire": {
+    "prefix": "EntFire()",
+    "body": "EntFire(${1:target}, ${2:action}, ${3:value}, ${4:delay}, ${5:activator})$0",
+    "description": "Generate an entity I/O event."
+  },
+  "EntFireByHandle": {
+    "prefix": "EntFireByHandle()",
+    "body": "EntFireByHandle(${1:target}, ${2:action}, ${3:value}, ${4:delay}, ${5:activator}, ${6:caller})$0",
+    "description": "Generate an entity I/O event."
+  },
+  "FrameTime": {
+    "prefix": "FrameTime()",
+    "body": "FrameTime()",
+    "description": "Get the time spent on the server in the last frame"
+  },
+  "GetDeveloperLevel": {
+    "prefix": "GetDeveloperLevel()",
+    "body": "GetDeveloperLevel()",
+    "description": "Gets the level of the developer mode. Equivalent to developer()"
+  },
+  "GetMapName": {
+    "prefix": "GetMapName()",
+    "body": "GetMapName()",
+    "description": "Get the name of the map."
+  },
+  "RandomFloat": {
+    "prefix": "RandomFloat()",
+    "body": "RandomFloat(${1:min}, ${2:max})$0",
+    "description": "Generate a random floating point number within a range, inclusive"
+  },
+  "RandomInt": {
+    "prefix": "RandomInt()",
+    "body": "RandomInt(${1:min}, ${2:max})$0",
+    "description": "Generate a random integer within a range, inclusive"
+  },
+  "ScriptGetGameMode": {
+    "prefix": "ScriptGetGameMode()",
+    "body": "ScriptGetGameMode()",
+    "description": "Gets the current game mode."
+  },
+  "ScriptGetGameType": {
+    "prefix": "ScriptGetGameType()",
+    "body": "ScriptGetGameType()",
+    "description": "Gets the current game type."
+  },
+  "ScriptGetRoundsPlayed": {
+    "prefix": "ScriptGetRoundsPlayed()",
+    "body": "ScriptGetRoundsPlayed()",
+    "description": "Get the number of rounds played so far."
+  },
+  "ScriptIsWarmupPeriod": {
+    "prefix": "ScriptIsWarmupPeriod()",
+    "body": "ScriptIsWarmupPeriod()",
+    "description": "Is it warmup or not."
+  },
+  "SendToConsole": {
+    "prefix": "SendToConsole()",
+    "body": "SendToConsole(${1:command})$0",
+    "description": "Send a string to the console as a command. The command is executed through the local player."
+  },
+  "SendToConsoleServer": {
+    "prefix": "SendToConsoleServer()",
+    "body": "SendToConsoleServer(${1:command})$0",
+    "description": "Send a string that gets executed on the server as a ServerCommand."
+  },
+  "Time": {
+    "prefix": "Time()",
+    "body": "Time()",
+    "description": "Get the current server time."
+  },
+  "TraceLine": {
+    "prefix": "TraceLine()",
+    "body": "TraceLine(${1:start}, ${2:end}, ${3:ignore})$0",
+    "description": "Given 2 points and entity to ignore, return fraction along line that hits world or models."
+  },
+  "UniqueString": {
+    "prefix": "UniqueString()",
+    "body": "UniqueString(${1:suffix })$0",
+    "description": "Generate a string guaranteed to be unique across the life of the script VM, with an optional root string. Useful for adding data to tables when not sure what keys are already in use in that table. Equivalent to DoUniqueString(suffix)"
+  }
+}
+
+//maths functions still need to be implemented
+//Co-op Strike functions still need to be implemented
+//Training Course functions still need to be implemented

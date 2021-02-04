@@ -1,0 +1,21 @@
+{
+	"name": "vscript-snippets",
+	"displayName": "VSCRIPT snippets",
+	"description": "VSCRIPT snippets for CS:GO",
+	"version": "0.0.1",
+	"publisher": "Baptiste-Martinet",
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "squirrel",
+				"path": "./snippets.json"
+			}
+		]
+	}
+}
