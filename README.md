@@ -6,6 +6,6 @@ https://developer.valvesoftware.com/wiki/List_of_Counter-Strike:_Global_Offensiv
 
 # TODO
 
-Maths functions still need to be implemented
-Co-op Strike functions still need to be implemented
-Training Course functions still need to be implemented
+Maths functions still need to be implemented.  
+Co-op Strike functions still need to be implemented.  
+Training Course functions still need to be implemented.  
