@@ -1,7 +1,7 @@
 {
   "entitygroup": {
     "prefix": "EntityGroup",
-    "body": "EntityGroup[$1]$0",
+    "body": "EntityGroup[${1:index}]$0",
     "description": "Get the given indexed entity in the logic_script"
   },
   "__KeyValueFromInt": {
@@ -272,12 +272,12 @@
   },
   "LookupAttachment": {
     "prefix": "LookupAttachment()",
-    "body": "LookupAttachment(${1:attachmentName})",
+    "body": "LookupAttachment(${1:attachmentName})$0",
     "description": "Get the named attachment ID."
   },
   "SetBodygroup": {
     "prefix": "SetBodygroup()",
-    "body": "SetBodygroup(${1:groupIndex}, ${2:value})",
+    "body": "SetBodygroup(${1:groupIndex}, ${2:value})$0",
     "description": "Sets the models bodygroup value by index."
   },
   "IsNoclipping": {
@@ -327,7 +327,7 @@
   },
   "FindByClassnameNearest": {
     "prefix": "FindByClassnameNearest()",
-    "body": "FindByClassnameNearest(${1:class}, ${2:origin},  ${3:radius})$0",
+    "body": "FindByClassnameNearest(${1:class}, ${2:origin}, ${3:radius})$0",
     "description": "Find the entity with the given class name nearest to the specified point."
   },
   "FindByClassnameWithin": {
@@ -576,7 +576,3 @@
     "description": "Generate a string guaranteed to be unique across the life of the script VM, with an optional root string. Useful for adding data to tables when not sure what keys are already in use in that table. Equivalent to DoUniqueString(suffix)"
   }
 }
-
-//maths functions still need to be implemented
-//Co-op Strike functions still need to be implemented
-//Training Course functions still need to be implemented
