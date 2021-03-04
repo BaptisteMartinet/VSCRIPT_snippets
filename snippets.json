@@ -579,5 +579,10 @@
     "prefix": "Entities",
     "body": "Entities",
     "description": "Provides access to spawned entities in the server."
+  },
+  "PI": {
+    "prefix": "PI",
+    "body": "PI",
+    "description": "VSCRIPT constant (=3.14159)."
   }
 }

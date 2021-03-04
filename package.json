@@ -4,10 +4,10 @@
 	"description": "VSCRIPT snippets for CS:GO",
   "icon": "logo2.png",
   "galleryBanner": {
-    "color": "#050024",
+    "color": "#4b7394",
     "theme": "dark"
   },
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"publisher": "Baptiste-Martinet",
 	"engines": {
 		"vscode": "^1.28.0"
