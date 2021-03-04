@@ -1,0 +1,10 @@
+{
+  "iconDefinitions": {
+    "_squirrel_icon": {
+      "iconPath": "./images/icon.svg"
+    }
+  },
+  "fileExtensions": {
+    "nut": "_squirrel_icon"
+  }
+}
