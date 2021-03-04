@@ -572,7 +572,12 @@
   },
   "UniqueString": {
     "prefix": "UniqueString()",
-    "body": "UniqueString(${1:suffix })$0",
+    "body": "UniqueString(${1:suffix})$0",
     "description": "Generate a string guaranteed to be unique across the life of the script VM, with an optional root string. Useful for adding data to tables when not sure what keys are already in use in that table. Equivalent to DoUniqueString(suffix)"
+  },
+  "Entities": {
+    "prefix": "Entities",
+    "body": "Entities",
+    "description": "Provides access to spawned entities in the server."
   }
 }

@@ -2,12 +2,12 @@
 	"name": "vscript-snippets",
 	"displayName": "VSCRIPT snippets",
 	"description": "VSCRIPT snippets for CS:GO",
-  "icon": "logo.jpg",
+  "icon": "logo2.png",
   "galleryBanner": {
     "color": "#C80000",
     "theme": "dark"
   },
-	"version": "0.0.8",
+	"version": "1.0.0",
 	"publisher": "Baptiste-Martinet",
 	"engines": {
 		"vscode": "^1.28.0"
