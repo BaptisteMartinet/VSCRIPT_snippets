@@ -182,12 +182,12 @@
   },
   "SetAngles": {
     "prefix": "SetAngles()",
-    "body": "SetAngles(${1:pitch}, ${2:yaw}, ${3:raw})$0",
+    "body": "SetAngles(${1:pitch}, ${2:yaw}, ${3:roll})$0",
     "description": "Set absolute origin."
   },
   "SetAngularVelocity": {
     "prefix": "SetAngularVelocity()",
-    "body": "SetAngularVelocity(${1:pitch}, ${2:yaw}, ${3:raw})$0",
+    "body": "SetAngularVelocity(${1:pitch}, ${2:yaw}, ${3:roll})$0",
     "description": "Set the local angular velocity - takes float pitch, yaw, roll velocities."
   },
   "SetForwardVector": {
