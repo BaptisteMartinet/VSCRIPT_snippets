@@ -247,12 +247,12 @@
   },
   "OnPostSpawn": {
     "prefix": "OnPostSpawn()",
-    "body": "OnPostSpawn()",
+    "body": "function OnPostSpawn() {$0}",
     "description": "This is called after the entity has spawned."
   },
   "Precache": {
     "prefix": "Precache()",
-    "body": "Precache()",
+    "body": "function Precache() {$0}",
     "description": "This is called during entity spawning and after restore to allow scripts to precache any resources they need."
   },
   "GetAttachmentAngles": {
